@@ -1,0 +1,11 @@
+C:\Users\Franco\source\repos\FrancoCasanova\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
+C:\Users\Franco\source\repos\FrancoCasanova\Entity\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\Franco\source\repos\FrancoCasanova\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\Franco\source\repos\FrancoCasanova\Entity\obj\Debug\netcoreapp3.1\Entity.csprojAssemblyReference.cache
+C:\Users\Franco\source\repos\FrancoCasanova\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
+C:\Users\Franco\source\repos\FrancoCasanova\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
+C:\Users\Franco\source\repos\FrancoCasanova\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CoreCompileInputs.cache
+C:\Users\Franco\source\repos\FrancoCasanova\Entity\obj\Debug\netcoreapp3.1\Entity.dll
+C:\Users\Franco\source\repos\FrancoCasanova\Entity\obj\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\Franco\source\repos\FrancoCasanova\Entity\bin\Debug\netcoreapp3.1\Business.dll
+C:\Users\Franco\source\repos\FrancoCasanova\Entity\bin\Debug\netcoreapp3.1\Data.dll

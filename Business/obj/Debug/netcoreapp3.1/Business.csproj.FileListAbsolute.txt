@@ -1,0 +1,4 @@
+C:\Users\Franco\source\repos\FrancoCasanova\Business\obj\Debug\netcoreapp3.1\Business.csprojAssemblyReference.cache
+C:\Users\Franco\source\repos\FrancoCasanova\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfoInputs.cache
+C:\Users\Franco\source\repos\FrancoCasanova\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfo.cs
+C:\Users\Franco\source\repos\FrancoCasanova\Business\obj\Debug\netcoreapp3.1\Business.csproj.CoreCompileInputs.cache
