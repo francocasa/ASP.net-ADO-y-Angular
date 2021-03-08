@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ALiitBxF+O+VN/BO4i7/3fEApNpMUFVmh/gXrbB/hnlbsfVrRJ2zPo4VfxalualXB19eKJcWkp0w0Bfcf2HJzw==",
+  "dgSpecHash": "OyT4YvZPq+y98quevD8RTeG0MmDmTW8+xV2C47/IiumrHa+s64mtmi4ciDVExXl5w9r7oQ3PKXXD7GSbVhSqiQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\BLL\\BLL.csproj",
+  "projectFilePath": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\BLL\\Entity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Franco\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Franco\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

@@ -4,7 +4,7 @@ using System.Text;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace D
+namespace Data
 {
 
     public class MP_HIJOS
@@ -66,11 +66,11 @@ namespace D
             return accesso.Escribir("ActualizarHijos", parameters);
 
         }
-        public int Eliminar(Business.HIJOS hijo)
+        public int Eliminar(int IdDerhab)
         {
 
             List<SqlParameter> parameters = new List<SqlParameter>();
-            parameters.Add(accesso.CrearParametro("@IdDerHab", hijo.IdDerHab));
+            parameters.Add(accesso.CrearParametro("@IdDerHab", IdDerhab));
 
             return accesso.Escribir("EliminarHijo", parameters);
         }

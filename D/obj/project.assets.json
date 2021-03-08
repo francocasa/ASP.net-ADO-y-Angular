@@ -478,9 +478,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\D.csproj",
-      "projectName": "D",
-      "projectPath": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\D.csproj",
+      "projectUniqueName": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\Data.csproj",
+      "projectName": "Data",
+      "projectPath": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\Data.csproj",
       "packagesPath": "C:\\Users\\Franco\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\obj\\",
       "projectStyle": "PackageReference",

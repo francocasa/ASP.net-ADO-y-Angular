@@ -4,7 +4,7 @@ using System.Text;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace D
+namespace Data
 {
     public class MP_PERSONAL
     {
@@ -64,11 +64,11 @@ namespace D
             return accesso.Escribir("ActualizarPersonal", parameters);
 
         }
-        public int Eliminar(Business.PERSONAL persona)
+        public int Eliminar(int idPersonal)
         {
 
             List<SqlParameter> parameters = new List<SqlParameter>();
-            parameters.Add(accesso.CrearParametro("@IdPersonal", persona.IdPersonal));
+            parameters.Add(accesso.CrearParametro("@IdPersonal", idPersonal));
 
             return accesso.Escribir("EliminarPersonal", parameters);
         }

@@ -1,33 +1,44 @@
-import {AfterViewInit, Component, ViewChild} from '@angular/core';
-import {MatPaginator} from '@angular/material/paginator';
-import {MatTableDataSource} from '@angular/material/table';
+import { Component, OnInit, ViewChild} from '@angular/core';
+import { PersonalModel } from '../models/personal';
+import { PersonalServiceService } from '../services/personal-service.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
 })
 
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent implements OnInit {
+  data:PersonalModel[] = [];
   displayedColumns: string[] = ['IdPersonal', 'ApPaterno', 'ApMaterno', 'Nombre1', 'Nombre2', 'NombreCompleto', 'FchNac', 'FchIngreso'];
-  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
+  base;
 
-  @ViewChild(MatPaginator, {static: false}) paginator: MatPaginator;
 
-  ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
+  constructor(private personalService: PersonalServiceService) {
   }
+
+  ngOnInit(): void {
+    this.read()
+  }
+
+  read()
+  {
+    this.personalService.listar().subscribe(
+      (respuesta:PersonalModel[]) => this.data = respuesta
+    )
+
+    setTimeout(() => {
+      
+      this.base = this.data;
+        
+      
+      console.log(this.data[0].ApMaterno )
+      
+      console.log("asdasd")
+      console.log(this.data[0])
+    }, 1000);
+  }
+
 }
 
-export interface PeriodicElement {
-  IdPersonal: number;
-  ApPaterno: string;
-  ApMaterno: string;
-  Nombre1: string;
-  Nombre2: string;
-  NombreCompleto: string;
-  FchNac: string;
-  FchIngreso: string;
-}
 
-const ELEMENT_DATA: PeriodicElement[] = [
-];
+

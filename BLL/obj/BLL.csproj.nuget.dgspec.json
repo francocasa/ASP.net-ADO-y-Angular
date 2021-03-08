@@ -31,8 +31,8 @@
               "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\Business\\Business.csproj": {
                 "projectPath": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\Business\\Business.csproj"
               },
-              "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\D.csproj": {
-                "projectPath": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\D.csproj"
+              "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\Data.csproj": {
+                "projectPath": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\Data.csproj"
               }
             }
           }
@@ -125,12 +125,12 @@
         }
       }
     },
-    "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\D.csproj": {
+    "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\D.csproj",
-        "projectName": "D",
-        "projectPath": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\D.csproj",
+        "projectUniqueName": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\Data.csproj",
+        "projectName": "Data",
+        "projectPath": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\Data.csproj",
         "packagesPath": "C:\\Users\\Franco\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\obj\\",
         "projectStyle": "PackageReference",

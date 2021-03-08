@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BLL
+namespace Entity
 {
     public class PERSONAL
     {
-        D.MP_PERSONAL mp = new D.MP_PERSONAL();
+        Data.MP_PERSONAL mp = new Data.MP_PERSONAL();
         
         public int Grabar(Business.PERSONAL personal)
         {
@@ -22,14 +22,24 @@ namespace BLL
             return res;
         }
 
-        public int Eliminar(Business.PERSONAL personal)
+        public int Eliminar(int idPersonal)
         {
-            return mp.Eliminar(personal);
+            return mp.Eliminar(idPersonal);
         }
 
         public List<Business.PERSONAL> Listar()
         {
             return mp.Listar();
+        }
+
+        public void Agregar(Business.PERSONAL personal)
+        {
+            mp.Agregar(personal);
+        }
+
+        public void Modificar(Business.PERSONAL personal)
+        {
+            mp.Modificar(personal);
         }
     }
 }

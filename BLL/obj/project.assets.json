@@ -144,7 +144,7 @@
           "bin/placeholder/Business.dll": {}
         }
       },
-      "D/1.0.0": {
+      "Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -152,10 +152,10 @@
           "System.Data.SqlClient": "4.8.2"
         },
         "compile": {
-          "bin/placeholder/D.dll": {}
+          "bin/placeholder/Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/D.dll": {}
+          "bin/placeholder/Data.dll": {}
         }
       }
     }
@@ -479,16 +479,16 @@
       "path": "../Business/Business.csproj",
       "msbuildProject": "../Business/Business.csproj"
     },
-    "D/1.0.0": {
+    "Data/1.0.0": {
       "type": "project",
-      "path": "../D/D.csproj",
-      "msbuildProject": "../D/D.csproj"
+      "path": "../D/Data.csproj",
+      "msbuildProject": "../D/Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Business >= 1.0.0",
-      "D >= 1.0.0"
+      "Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -497,9 +497,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\BLL\\BLL.csproj",
-      "projectName": "BLL",
-      "projectPath": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\BLL\\BLL.csproj",
+      "projectUniqueName": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\BLL\\Entity.csproj",
+      "projectName": "Entity",
+      "projectPath": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\BLL\\Entity.csproj",
       "packagesPath": "C:\\Users\\Franco\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\BLL\\obj\\",
       "projectStyle": "PackageReference",
@@ -521,8 +521,8 @@
             "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\Business\\Business.csproj": {
               "projectPath": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\Business\\Business.csproj"
             },
-            "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\D.csproj": {
-              "projectPath": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\D.csproj"
+            "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\Data.csproj": {
+              "projectPath": "C:\\Users\\Franco\\source\\repos\\FrancoCasanova\\D\\Data.csproj"
             }
           }
         }
