@@ -15,7 +15,7 @@ namespace FrancoCasanova.Controllers
         Entity.PERSONAL entity = new Entity.PERSONAL();
 
         [HttpGet]
-        public List<Business.PERSONAL> Lista()
+        public IEnumerable<Business.PERSONAL> Lista()
         {
 
             List<Business.PERSONAL> lp = new List<Business.PERSONAL>();

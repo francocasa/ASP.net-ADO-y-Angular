@@ -26,16 +26,6 @@ export class HomeComponent implements OnInit {
       (respuesta:PersonalModel[]) => this.data = respuesta
     )
 
-    setTimeout(() => {
-      
-      this.base = this.data;
-        
-      
-      console.log(this.data[0].ApMaterno )
-      
-      console.log("asdasd")
-      console.log(this.data[0])
-    }, 1000);
   }
 
 }

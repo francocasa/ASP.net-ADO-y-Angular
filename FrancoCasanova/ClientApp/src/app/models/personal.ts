@@ -1,13 +1,13 @@
 export class PersonalModel
 {
-    FchIngreso :string; 
-    IdPersonal:number;
-    ApPaterno:string;
-    ApMaterno:string;
-    Nombre1:string;
-    Nombre2:string;
-    NombreCompleto:string;
-    FchNac:string;
+    fchIngreso :string; 
+    idPersonal:number;
+    apPaterno:string;
+    apMaterno:string;
+    nombre1:string;
+    nombre2:string;
+    nombreCompleto:string;
+    fchNac:string;
 
 
     constructor(){
