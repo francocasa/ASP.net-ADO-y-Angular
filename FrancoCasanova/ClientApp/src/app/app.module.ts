@@ -12,6 +12,9 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
 import { AngularMaterialModule } from "./angular-material/angular-material.module";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InsertComponent } from './reusable/insert/insert.component';
+import { HijosComponent } from './hijos/hijos.component';
+import { InsertarHijoComponent } from './insertar-hijo/insertar-hijo.component';
 
 
 
@@ -21,7 +24,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NavMenuComponent,
     HomeComponent,
     CounterComponent,
-    FetchDataComponent
+    FetchDataComponent,
+    InsertComponent,
+    HijosComponent,
+    InsertarHijoComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -30,6 +36,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AngularMaterialModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'insert', component: InsertComponent},
+      { path: 'modificar/:id', component: InsertComponent},
+      { path: 'insertarHijo/:id', component: InsertarHijoComponent},
+      { path: 'modificarHijo/:id', component: InsertarHijoComponent},
+      { path: 'hijos/:id', component: HijosComponent},
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
     ]),

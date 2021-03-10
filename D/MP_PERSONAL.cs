@@ -35,6 +35,36 @@ namespace Data
 
         }
 
+
+        public List<Business.PERSONAL> VerPersonal(int IdPersonal)
+        {
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            parameters.Add(accesso.CrearParametro("@IdPersonal", IdPersonal));
+
+            DataTable tabla = accesso.Leer("VerPersonal", parameters);
+
+            List<Business.PERSONAL> personas = new List<Business.PERSONAL>();
+            foreach (DataRow registro in tabla.Rows)
+            {
+                Business.PERSONAL persona = new Business.PERSONAL();
+
+                persona.IdPersonal = int.Parse(registro["IdPersonal"].ToString());
+                persona.ApPaterno = registro["ApPaterno"].ToString();
+                persona.ApMaterno = registro["ApMaterno"].ToString();
+                persona.Nombre1 = registro["Nombre1"].ToString();
+                persona.Nombre2 = registro["Nombre2"].ToString();
+                persona.NombreCompleto = registro["NombreCompleto"].ToString();
+                persona.FchNac = registro["FchNac"].ToString();
+                persona.FchIngreso = registro["FchIngreso"].ToString();
+
+                personas.Add(persona);
+            }
+            return personas;
+
+        }
+
+
+
         public int Agregar(Business.PERSONAL persona)
         {
             List<SqlParameter> parameters = new List<SqlParameter>();

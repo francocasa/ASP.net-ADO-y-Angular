@@ -1,0 +1,65 @@
+<form autocomplete="off" (ngSubmit)="guardarHijo(formTemplate)" #formTemplate="ngForm">
+    <h3 class="mt-5" *ngIf="!modificar">
+        Crear hijo</h3>
+    <h3 class="mt-5" *ngIf="modificar">Modificar hijo con id {{id}}</h3>
+
+    <div>
+        <!-- IdDerHab -->
+        <div class="row" *ngIf="!modificar">
+            <label class="col-2 col-form-label">IdDerHab</label>
+            <div class="col-8">
+                <input class="form-control" type="number" placeholder="" name="IdDerHab" #IdDerHab="ngModel" [(ngModel)]="IdDerHabText">
+                <small class="form-text text"> Ingrese un IdDerHab</small>
+            </div>
+        </div>
+
+
+        <!-- ApPaterno -->
+        <div class="row">
+            <label class="col-2 col-form-label">ApPaterno</label>
+            <div class="col-8">
+                <input class="form-control" type="text" placeholder="" name="ApPaterno" #ApPaterno="ngModel" [(ngModel)]="ApPaternoText">
+                <small class="form-text text"> Ingrese un ApPaterno</small>
+            </div>
+        </div>
+        <!-- ApMaterno -->
+        <div class="row">
+            <label class="col-2 col-form-label">ApMaterno</label>
+            <div class="col-8">
+                <input class="form-control" type="text" placeholder="" [(ngModel)]="ApMaternoText" name="ApMaterno" #ApMaterno="ngModel">
+                <small class="form-text text"> ApMaterno</small>
+            </div>
+        </div>
+        <!-- Nombre1 -->
+        <div class="row">
+            <label class="col-2 col-form-label">Nombre1</label>
+            <div class="col-8">
+                <input class="form-control" type="text" placeholder="" [(ngModel)]="Nombre1Text" name="Nombre1" #Nombre1="ngModel">
+                <small class="form-text text"> Ingrese un Nombre1</small>
+            </div>
+        </div>
+        <!-- Nombre2 -->
+        <div class="row">
+            <label class="col-2 col-form-label">Nombre2</label>
+            <div class="col-8">
+                <input class="form-control" type="text" placeholder="" [(ngModel)]="Nombre2Text" name="Nombre2" #Nombre2="ngModel">
+                <small class="form-text text"> Ingrese un Nombre2</small>
+            </div>
+        </div>
+        <!-- FchNac -->
+        <div class="row">
+            <label class="col-2 col-form-label">FchNac</label>
+            <div class="col-8">
+                <input class="form-control" type="text" placeholder="" [(ngModel)]="FchNacText" name="FchNac" #FchNac="ngModel">
+                <small class="form-text text"> Ingrese un FchNac: FORMATO: 20021995</small>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col" style="text-align: center;">
+            <button class="mt-2" mat-raised-button color="primary" type="submit">Crear hijo</button>
+        </div>
+    </div>
+</form>

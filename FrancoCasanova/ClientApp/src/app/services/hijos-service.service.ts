@@ -10,12 +10,17 @@ export class HijosServiceService {
   
 
   constructor(@Inject('BASE_URL') baseUrl: string, private httpClient: HttpClient) {
-    this.url = baseUrl + 'api/Personal';
+    this.url = baseUrl + 'api/Hijos';
   }
 
-  listar()
+  listar(idPersonal)
   {
-    return this.httpClient.get(`${this.url}`);
+    return this.httpClient.get(`${this.url}/${idPersonal}/hijos`);
+  }
+
+  verHijo(idDerHab)
+  {
+    return this.httpClient.get(`${this.url}/${idDerHab}/datos`);
   }
 
   insertar(hijoModel:HijoModel) {
@@ -23,10 +28,15 @@ export class HijosServiceService {
   }
 
   modificar(hijoModel:HijoModel) {
-    return this.httpClient.post(`${this.url}`, hijoModel);
+    return this.httpClient.put(`${this.url}`, hijoModel);
   }
 
-  eliminar(IdDerhab:number) {
-    return this.httpClient.delete(`${this.url}/${IdDerhab}`);
+  eliminar(idDerHab:number) {
+    return this.httpClient.delete(`${this.url}/${idDerHab}`);
   }
+
+  
+
+
+
 }

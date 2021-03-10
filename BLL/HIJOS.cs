@@ -27,9 +27,14 @@ namespace Entity
             return mp.Eliminar(IdDerhab);
         }
 
-        public List<Business.HIJOS> Listar()
+        public List<Business.HIJOS> Listar(int IdPersonal)
         {
-            return mp.Listar();
+            return mp.Listar(IdPersonal);
+        }
+
+        public List<Business.HIJOS> VerHijo(int IdDerHab)
+        {
+            return mp.VerHijo(IdDerHab);
         }
 
 

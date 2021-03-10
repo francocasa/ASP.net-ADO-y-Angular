@@ -13,9 +13,14 @@ namespace Data
         private Accesso accesso = new Accesso();
 
 
-        public List<Business.HIJOS> Listar()
+        public List<Business.HIJOS> Listar(int IdPersonal)
         {
-            DataTable tabla = accesso.Leer("ListarHijos", null);
+
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            parameters.Add(accesso.CrearParametro("@IdPersonal", IdPersonal));
+
+
+            DataTable tabla = accesso.Leer("ListarHijos", parameters);
 
             List<Business.HIJOS> hijos = new List<Business.HIJOS>();
             foreach (DataRow registro in tabla.Rows)
@@ -36,6 +41,37 @@ namespace Data
             return hijos;
 
         }
+
+
+        public List<Business.HIJOS> VerHijo(int IdDerHab)
+        {
+
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            parameters.Add(accesso.CrearParametro("@IdDerHab", IdDerHab));
+
+
+            DataTable tabla = accesso.Leer("VerHijo", parameters);
+
+            List<Business.HIJOS> hijos = new List<Business.HIJOS>();
+            foreach (DataRow registro in tabla.Rows)
+            {
+                Business.HIJOS hijo = new Business.HIJOS();
+
+                hijo.IdDerHab = int.Parse(registro["IdDerhab"].ToString());
+                hijo.IdPersonal = int.Parse(registro["IdPersonal"].ToString());
+                hijo.ApPaterno = registro["ApPaterno"].ToString();
+                hijo.ApMaterno = registro["ApMaterno"].ToString();
+                hijo.Nombre1 = registro["Nombre1"].ToString();
+                hijo.Nombre2 = registro["Nombre2"].ToString();
+                hijo.NombreCompleto = registro["NombreCompleto"].ToString();
+                hijo.FchNac = registro["FchNac"].ToString();
+
+                hijos.Add(hijo);
+            }
+            return hijos;
+
+        }
+
 
         public int Agregar(Business.HIJOS hijo)
         {

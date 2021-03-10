@@ -32,6 +32,11 @@ namespace Entity
             return mp.Listar();
         }
 
+        public List<Business.PERSONAL> VerPersonal(int IdPersonal)
+        {
+            return mp.VerPersonal(IdPersonal);
+        }
+
         public void Agregar(Business.PERSONAL personal)
         {
             mp.Agregar(personal);

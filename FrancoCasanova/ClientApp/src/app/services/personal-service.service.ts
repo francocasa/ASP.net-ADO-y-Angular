@@ -19,12 +19,17 @@ export class PersonalServiceService {
     return this.httpClient.get(`${this.url}`);
   }
 
+  verPersonal(idPersonal)
+  {
+    return this.httpClient.get(`${this.url}/${idPersonal}`);
+  }
+
   insertar(personalModel:PersonalModel) {
     return this.httpClient.post(`${this.url}`, personalModel);
   }
 
   modificar(personalModel:PersonalModel) {
-    return this.httpClient.post(`${this.url}`, personalModel);
+    return this.httpClient.put(`${this.url}`, personalModel);
   }
 
   eliminar(IdPersonal:number) {

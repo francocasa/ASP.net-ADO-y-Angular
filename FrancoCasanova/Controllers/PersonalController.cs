@@ -37,6 +37,29 @@ namespace FrancoCasanova.Controllers
             return lp;
         }
 
+        [HttpGet("{IdPersonal}")]
+        public IEnumerable<Business.PERSONAL> VerPersonal(int IdPersonal)
+        {
+
+            List<Business.PERSONAL> lp = new List<Business.PERSONAL>();
+            foreach (Business.PERSONAL per in entity.VerPersonal(IdPersonal))
+            {
+                Business.PERSONAL p = new Business.PERSONAL();
+                p.IdPersonal = per.IdPersonal;
+                p.FchIngreso = per.FchIngreso;
+                p.ApPaterno = per.ApPaterno;
+                p.ApMaterno = per.ApMaterno;
+                p.Nombre1 = per.Nombre1;
+                p.Nombre2 = per.Nombre2;
+                p.FchNac = per.FchNac;
+                p.NombreCompleto = per.NombreCompleto;
+
+                lp.Add(p);
+            }
+
+            return lp;
+        }
+
         [HttpDelete("{IdPersonal}")]
         public void Eliminar([FromRoute] int IdPersonal)
         {

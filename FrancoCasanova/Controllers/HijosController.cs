@@ -14,12 +14,12 @@ namespace FrancoCasanova.Controllers
 
         Entity.HIJOS entity = new Entity.HIJOS();
 
-        [HttpGet]
-        public List<Business.HIJOS> Lista()
+        [HttpGet("{IdPersonal}/hijos")]
+        public List<Business.HIJOS> Lista([FromRoute] int IdPersonal)
         {
 
             List<Business.HIJOS> lp = new List<Business.HIJOS>();
-            foreach (Business.HIJOS per in entity.Listar())
+            foreach (Business.HIJOS per in entity.Listar(IdPersonal))
             {
                 Business.HIJOS p = new Business.HIJOS();
                 p.IdPersonal = per.IdPersonal;
@@ -36,6 +36,31 @@ namespace FrancoCasanova.Controllers
 
             return lp;
         }
+
+        
+        [HttpGet("{IdDerHab}/datos")]
+        public List<Business.HIJOS> VerHijo([FromRoute] int IdDerHab)
+        {
+
+            List<Business.HIJOS> lp = new List<Business.HIJOS>();
+            foreach (Business.HIJOS per in entity.VerHijo(IdDerHab))
+            {
+                Business.HIJOS p = new Business.HIJOS();
+                p.IdPersonal = per.IdPersonal;
+                p.IdDerHab = per.IdDerHab;
+                p.ApPaterno = per.ApPaterno;
+                p.ApMaterno = per.ApMaterno;
+                p.Nombre1 = per.Nombre1;
+                p.Nombre2 = per.Nombre2;
+                p.FchNac = per.FchNac;
+                p.NombreCompleto = per.NombreCompleto;
+
+                lp.Add(p);
+            }
+
+            return lp;
+        }
+
 
         [HttpDelete("{IdDerHab}")]
         public void Eliminar([FromRoute] int IdDerHab)
